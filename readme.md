@@ -1,6 +1,6 @@
 <h1 align="center">
 <img src="https://raw.githubusercontent.com/rishigiridotcom/rishigiri.com/71200156248c8ba2babbf387b0c0bd67e184ee17/github/apod-nasa.png">
-<img src="https://travis-ci.org/CodeDotJS/words-of-the-day.svg?branch=master">
+<img src="https://travis-ci.org/CodeDotJS/apod-nasa.svg?branch=master">
 <img src="https://img.shields.io/badge/code_style-XO-5ed9c7.svg">
 </h1>
 
