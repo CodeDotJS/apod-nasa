@@ -1,0 +1,53 @@
+{
+  "name": "apod-nasa",
+  "version": "1.0.0",
+  "description": "Astronomy Picture of the Day!",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeDotJS/apod-nasa.git"
+  },
+  "author": "Rishi Giri <rushforlinux@gmail.com> (rishigiri.com)",
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "engines": {
+    "node": ">=4"
+  },
+  "keywords": [
+    "api",
+    "astronomy",
+    "picture",
+    "new",
+    "day",
+    "learn",
+    "fetch",
+    "images",
+    "nasa",
+    "stars",
+    "planets",
+    "galaxies",
+    "cosmology",
+    "space"
+  ],
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.1",
+    "got": "^5.7.1"
+  },
+  "devDependencies": {
+    "ava": "*",
+    "execa": "^0.2.2",
+    "xo": "*"
+  },
+  "xo": {
+    "esnext": true
+  },
+  "bugs": {
+    "url": "https://github.com/CodeDotJS/apod-nasa/issues"
+  },
+  "homepage": "https://github.com/CodeDotJS/apod-nasa#readme",
+  "main": "index.js"
+}
