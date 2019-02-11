@@ -17,10 +17,16 @@ const apodNasa = () => {
 			title: $('center').eq(1).text().split('\n')[1].trim(),
 			image: `https://apod.nasa.gov/apod/image${link}`
 		};
-	}).catch(e => console.log(e));
+	}).catch(error => {
+		if (error) {
+			error.message = 'Content is unavailable or is in unsupported format!';
+		}
+
+		return error.message;
+	});
 };
 
-const apod = module.exports = () => apodNasa();
+const apod = module.exports = () => apodNasa(); // eslint-disable-line no-multi-assign
 
 apod.date = space => {
 	const url = `https://apod.nasa.gov/apod/ap${space}.html`;
@@ -33,10 +39,11 @@ apod.date = space => {
 			title: $('title').text().split('-')[1].trim(),
 			image: `https://apod.nasa.gov/apod/image${link}`
 		};
-	}).catch(err => {
-		if (err) {
-			err.message = 'Image not available for the given date.';
+	}).catch(error => {
+		if (error) {
+			error.message = 'Content is unavailable';
 		}
-		return err.message;
+
+		return error.message;
 	});
 };
