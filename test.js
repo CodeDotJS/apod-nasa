@@ -1,11 +1,11 @@
 import test from 'ava';
-import m from './';
+import m from '.';
 
 test('regular', async t => {
 	const data = await m();
 
-	t.is(data.title, 'The Summer Triangle over the Great Wall');
-	t.is(data.image, 'https://apod.nasa.gov/apod/image/1707/GreatWallMilkyWay_Yu_1686.jpg');
+	t.is(data.title, 'New Data: Ultima Thule Surprisingly Flat');
+	t.is(data.image, 'https://apod.nasa.gov/apod/image/1902/MU69Flatter_NewHorizons_1920.jpg');
 });
 
 test('specific', async t => {
