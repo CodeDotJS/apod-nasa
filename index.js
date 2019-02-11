@@ -17,8 +17,8 @@ const apodNasa = () => {
 			title: $('center').eq(1).text().split('\n')[1].trim(),
 			image: `https://apod.nasa.gov/apod/image${link}`
 		};
-	});
-}.catch(e => console.log(e));
+	}).catch(e => console.log(e));
+};
 
 const apod = module.exports = () => apodNasa();
 
